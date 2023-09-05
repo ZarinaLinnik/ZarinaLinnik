@@ -10,14 +10,14 @@
         
         <fieldset>
             <legend>Личные данные</legend>
-            <input type="text" name="surname" value="Фамилия" maxlength="25" pattern="([A-Za-z].*)" autofocus required><br>
-            <input type="text" name="name" value="Имя" maxlength="20" pattern="([A-Za-z].*)" required><br>
-            <input type="text" name="patronymic" value="Отчество" maxlength="24" pattern="([A-Za-z].*)" required><br>
+            <input type="text" name="surname" value="Фамилия" maxlength="25" pattern="([А-Яа-я].*)" autofocus required><br>
+            <input type="text" name="name" value="Имя" maxlength="20" pattern="([А-Яа-я].*)" required><br>
+            <input type="text" name="patronymic" value="Отчество" maxlength="24" pattern="([А-Яа-я].*)" required><br>
             
             <fieldset>
                 <legend>Паспортные данные</legend>
-                <input name="letters2_id" size="2" maxlength="2" pattern="([A-Z]{2})" required>
-                <input name="numbers_id" size="8" maxlength="7" pattern="\d{7}" required>
+                <input name="passport_letters" size="2" maxlength="2" pattern="([A-Z]{2})" required>
+                <input name="passport_numbers" size="8" maxlength="7" pattern="\d{7}" required>
             </fieldset>
             <fieldset>
                 <legend>Дата рождения</legend>
