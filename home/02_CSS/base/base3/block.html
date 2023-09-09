@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background-color: blanchedalmond;
+            margin: 5px;
+            padding: 0.1px;
+        }
+
+        .navigation{
+            width: 15em;
+            background-color: #dddcdc;
+            float: left;
+        }
+
+        .article{
+            background-color: #ccc;
+            margin-bottom: .2em;
+            margin-left: 15em;
+            overflow: auto;
+        }
+
+        .footer{
+            background-color: indianred;
+            clear: both;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="navigation">
+            <h3>Блок навигации</h3>
+            <p style="text-align: justify; padding: 10px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id at distinctio cum vero, consectetur aliquid corporis voluptatum repellat obcaecati dolor? 
+                Facilis, ea consequuntur voluptatem perferendis libero ut. 
+                Repellendus, praesentium officiis?
+            </p>
+        </div>
+        <div class="article" style="height: 160px;">
+            <h3>Статья 1</h3>
+            <p>Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседней равным .2em, 
+                при помощи свойства margin-bottom.</p>
+        </div>
+        <div class="article" style="height: 300px;">
+            <h3>Статья 2</h3>
+            <p>
+                Размер блока:<br>
+                Занимает всю доступную ширину<br>
+                Должен присутствовать цвет фона<br>
+                Во всех "статьях" сделайте отступ снизу от соседней равным .2em, 
+                при помощи свойства margin-bottom. Картинка вставлена при помощи тега, 
+                плавание организовано по правому краю внутри данной статьи для этой картинки.
+            </p>
+            <img src="../images/icon_mail.png" alt="email" style="float: right;">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="footer">Подвал</div>
+</body>
+</html>
