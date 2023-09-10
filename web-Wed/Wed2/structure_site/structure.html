@@ -9,7 +9,17 @@
         }
         .header{
             background-color: aquamarine;
-            padding: 20px;
+            padding: 10px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+        }
+        .el_header{
+            background-color: azure;
+            display: inline-block;
+            height: 30px;
+            width: 200px;
+            margin: auto;            
         }
         .menu{
             background-color: green;
@@ -17,8 +27,15 @@
             height: 200px;
             width: 100px;
         }
+        .el_menu{
+            background-color: yellow;
+            height: 20px;
+            width: 80px;
+            margin: 10px;
+        }
         .content{
             background-color: bisque;
+            padding: 0.1px;
             margin: 0px 100px;
         }
         .banner{
@@ -27,39 +44,62 @@
             height: 200px;
             width: 100px;
         }
+        .ads{
+            height: 150px;
+            width: 75px;
+            background-color: aqua;
+            margin: auto;
+        }
         .footer{
             background-color: aquamarine;
             padding: 20px;
             clear: both;
         }
-        .content1{
+        .content_inside{
             display: inline-block; 
-            height: 10px; 
-            width: 10px; 
-            margin-right: 30px;
+            height: 200px; 
+            width: 200px; 
+            background-color: brown;
+            margin: 40px;
         }
-        .content2{
-            display: inline-block; 
-            height: 10px; 
-            width: 10px; 
-            margin-left: 30px;
+        .wrap{
+            background-color: purple;
+            padding: 0.1px;
         }
     </style>
 </head>
 <body>
-    <div class="header">HEADER</div>
+    <div class="header">
+        <!-- HEADER -->
+        <div class="el_header">1</div>
+        <div class="el_header">2</div>
+        <div class="el_header">3</div>
+        <div class="el_header">4</div>
+    </div>
     <div class="wrap">
-        <div class="menu">MENU</div>
-        <div class="banner">BANNER</div>
+        <div class="menu">
+            MENU
+            <div class="el_menu">1</div>
+            <div class="el_menu">2</div>
+            <div class="el_menu">3</div>
+            <div class="el_menu">4</div>
+            <div class="el_menu">5</div>
+        </div>
+        <div class="banner">
+            BANNER
+            <div class="ads"></div>
+        </div>
         <div class="content">
             <p>CONTENT</p>
-            <div class="content1">content 1</div>
-            <div class="content2">content 2</div>
+            <div class="content_inside" style="float: left; margin-left: 10%;">content 1</div>
+            <div class="content_inside" style="float: right; margin-right: 10%;">content 2</div>
+            <div style="clear: both;"></div>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente libero magnam quae, perferendis aperiam sequi reiciendis aut commodi minima, recusandae porro nemo eligendi, hic sint molestias explicabo ducimus asperiores?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente libero magnam quae, perferendis aperiam sequi reiciendis aut commodi minima, recusandae porro nemo eligendi, hic sint molestias explicabo ducimus asperiores?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente libero magnam quae, perferendis aperiam sequi reiciendis aut commodi minima, recusandae porro nemo eligendi, hic sint molestias explicabo ducimus asperiores?</p>
         </div>
+        <div style="clear: both;"></div>
     </div>
     <div class="footer">FOOTER</div>
 </body>
