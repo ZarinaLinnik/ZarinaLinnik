@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width: 80%;
+            padding: 2em;
+            background: url(images/frame/b-r.gif) no-repeat bottom right, 
+                        url(images/frame/b-l.gif) no-repeat bottom left,
+                        url(images/frame/t-r.gif) no-repeat top right,
+                        url(images/frame/t-l.gif) no-repeat top left,
+                        url(images/frame/t.gif) repeat-x top,
+                        url(images/frame/r.gif) repeat-y right,
+                        url(images/frame/l.gif) repeat-y left,
+                        url(images/frame/b.gif) repeat-x bottom;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: pink;">
+        <p style="text-align: center;">
+            Первых два варианта. <br> (Мульти-фон для одного блока) <br> From presentation
+        </p>
+    </div>
+
+    <hr>
+
+    <div style="background: 
+        url(images/frame/b-r.gif) no-repeat bottom right, 
+        url(images/frame/b-l.gif) no-repeat bottom left,
+        url(images/frame/t-r.gif) no-repeat top right,
+        url(images/frame/t-l.gif) no-repeat top left,
+        url(images/frame/t.gif) repeat-x top,
+        url(images/frame/r.gif) repeat-y right,
+        url(images/frame/l.gif) repeat-y left,
+        url(images/frame/b.gif) repeat-x bottom;
+        width: 80%; padding: 2em;">
+        <p>Здесь текст и второй из первых (вариантов). <br> From .rar</p>
+    </div>
+</body>
+</html>
