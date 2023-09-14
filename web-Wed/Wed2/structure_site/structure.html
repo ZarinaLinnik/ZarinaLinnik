@@ -10,16 +10,14 @@
         .header{
             background-color: aquamarine;
             padding: 10px;
-            display: flex;
-            align-items:center;
-            justify-content: center;
+            height: 50px;
         }
         .el_header{
             background-color: azure;
-            display: inline-block;
+            float: left;
             height: 30px;
             width: 200px;
-            margin: auto;            
+            margin: 10px;            
         }
         .menu{
             background-color: green;
@@ -56,15 +54,91 @@
             clear: both;
         }
         .content_inside{
-            display: inline-block; 
             height: 200px; 
             width: 200px; 
             background-color: brown;
             margin: 40px;
         }
+        .content1{
+            float: left;
+            margin-left: 10%;
+        }
+        .content2{
+            float:right;
+            margin-right: 10%;
+        }
         .wrap{
             background-color: purple;
             padding: 0.1px;
+        }
+        @media all and (max-width:924px){
+            *{
+            margin: 0px;
+        }
+        .header{
+            background-color: rgb(80, 159, 133);
+            padding: 10px;
+            height: 180px;
+        }
+        .el_header{
+            background-color: rgb(125, 134, 134);
+            height: 30px;
+            width: auto;
+            float: none;
+        }
+        .menu{
+            background-color: rgb(1, 74, 1);
+            float: none;
+            height: 200px;
+            width:auto;
+        }
+        .el_menu{
+            background-color: rgb(121, 121, 1);
+            position: relative;
+            height: 20px;
+            width: 80%;
+            left: 10%;
+        }
+        .content{
+            background-color: rgb(177, 159, 137);
+            padding: 0.1px;
+            margin: 0;
+            text-align: center;
+        }
+        .banner{
+            background-color: rgb(4, 231, 4);
+            float: none;
+            height: 200px;
+            width: auto;
+        }
+        .ads{
+            height: 150px;
+            width: 80%;
+            background-color: rgb(2, 110, 110);
+        }
+        .footer{
+            background-color: rgb(66, 126, 106);
+            padding: 20px;
+        }
+        .content_inside{
+            height: 200px; 
+            width: 80%; 
+            background-color: rgb(240, 64, 64);
+            margin: 40px;
+            float: none;
+        }
+        .content1{
+            float: none;
+            margin-left: ;
+        }
+        .content2{
+            float:none;
+            margin-right: 0;
+        }
+        .wrap{
+            background-color: rgb(231, 17, 231);
+            padding: 0.1px;
+        }
         }
     </style>
 </head>
@@ -91,8 +165,8 @@
         </div>
         <div class="content">
             <p>CONTENT</p>
-            <div class="content_inside" style="float: left; margin-left: 10%;">content 1</div>
-            <div class="content_inside" style="float: right; margin-right: 10%;">content 2</div>
+            <div class="content_inside content1">content 1</div>
+            <div class="content_inside content2">content 2</div>
             <div style="clear: both;"></div>
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente libero magnam quae, perferendis aperiam sequi reiciendis aut commodi minima, recusandae porro nemo eligendi, hic sint molestias explicabo ducimus asperiores?</p>

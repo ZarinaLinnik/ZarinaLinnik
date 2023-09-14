@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 10000px; 
+        }
+        div{
+            color: gray;
+            background-color: rgb(187, 185, 185);
+            height: 20px;
+            width: 93px;
+            border-radius: 5px;
+            border: solid 2px rgb(50, 49, 49);
+            cursor: pointer;
+        }
+        body > div{float: left;}
+        div > div{
+            visibility: hidden; 
+            position: relative;
+            top: 2px;
+            right: 1px;
+        }
+        div:hover > div{visibility: visible;}
+        @media all and (max-width:690px) {
+            body > div{float: none;}
+            div > div{
+                visibility: hidden; 
+                position: relative;
+                left: 93px;
+                top: -20px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div>Понедельник
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    <div>Вторник
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    <div>Среда
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    <div>Четверг
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    <div>Пятница
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+    <div>Суббота
+        <div>Завтрак</div>
+        <div>Обед</div>
+        <div>Ужин</div>
+    </div>
+</body>
+</html>

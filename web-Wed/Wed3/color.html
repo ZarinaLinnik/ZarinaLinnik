@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > p a:nth-last-child(1){color: gray;}
+        body > div > ul li:first-child a{color: red;}
+        body > div > ul li:nth-child(2) a{color: green;}
+        body > div > ul li:last-child a{color: blue;}
+        div > p > em a{color: yellow;}
+        div > span a{color: black;}
+        a + span a{color:pink}
+        span + em a{color:violet}
+        body > ul > li:first-child > a{color: orange;}
+        li > p > em a {color: aqua;}
+        body > ul li > a{color: indigo;}
+        body > ul div li > em > a{color: chocolate;}
+        body > ul div li > span > a{color: brown;}
+        p > a{color: white; background-color: blueviolet;}
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="#">1.red</a></li>
+            <li><span><a href="#">2.green</a></span></li>
+            <li><em><a href="#">3.blue</a></em></li>
+        </ul>
+        <p><em><a href="#">4.yellow</a></em></p>
+        <span><em><a href="#">5.black</a></em></span>
+    </div>
+
+    <ul>
+        <li>
+            <a href="#">6.orange</a>
+            <span><a href="#">7.rose/pink</a></span>
+            <em><a href="#">8.violet</a></em>
+        </li>
+        <li><p><em><a href="#">9.aqua</a></em></p></li>
+        <li>
+            <div>
+                <ul>
+                    <li><a href="#">10.indigo</a></li>
+                    <li><em><a href="#">11.chocolate</a></em></li>
+                    <li><span><a href="#">12.brown</a></span></li>
+                </ul>
+                <p><a href="#">13.white + фон</a></p>
+            </div>
+        </li>
+    </ul>
+
+    <p><em><a href="#">14.gray</a></em></p>
+</body>
+</html>
