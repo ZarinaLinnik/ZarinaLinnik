@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Site</title>
+    <style>
+        .wrap{
+            background-color: rgb(229, 149, 51);
+            margin: 0;
+        }
+        .header{
+            background-color: rgb(91, 82, 71);
+            padding: 0.1px;
+            margin-bottom: 0px;
+        }
+        .el_header{
+            background-color: brown;
+            margin: 3px;
+            position: relative;
+        }
+        .menu{
+            background-color: yellowgreen;
+            height: 370px;
+        }
+        .el_menu{
+            background-color: cadetblue;
+            margin: 5px;
+        }
+        .content{
+            background-color: blue;
+            padding: 0.1px;
+        }
+        .content_inside{
+            background-color: aqua;
+            margin: 5px;
+        }
+        .banner{
+            background-color: antiquewhite;
+            position: relative;
+            height: 370px;
+        }
+        .ads{
+            background-color: burlywood;
+            height: 150px;
+        }
+        .footer{
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="header row">
+        <!-- HEADER -->
+        <div class="el_header col m3 s12">1</div>
+        <div class="el_header col m3 s12">2</div>
+        <div class="el_header col m3 s12">3</div>
+        <div class="el_header col m3 s12">4</div>
+    </div>
+    <div class="wrap row">
+        <div class="menu col m2 s12">
+            MENU <br>
+            <div class="el_menu col m12 s12">1</div>
+            <div class="el_menu col m12 s12">2</div>
+            <div class="el_menu col m12 s12">3</div>
+            <div class="el_menu col m12 s12">4</div>
+            <div class="el_menu col m12 s12">5</div>
+        </div>
+        <div class="content col m8 s12">
+            <p>CONTENT</p>
+            <div class="content_inside content1 row col m6 s12">content 1</div>
+            <div class="content_inside content2 row col m6 s12">content 2</div> <br>
+            <div style="clear: both;"></div>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente libero magnam quae, perferendis aperiam sequi reiciendis aut commodi minima, recusandae porro nemo eligendi, hic sint molestias explicabo ducimus asperiores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente libero magnam quae, perferendis aperiam sequi reiciendis aut commodi minima, recusandae porro nemo eligendi, hic sint molestias explicabo ducimus asperiores?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente libero magnam quae, perferendis aperiam sequi reiciendis aut commodi minima, recusandae porro nemo eligendi, hic sint molestias explicabo ducimus asperiores?</p>
+        </div>
+        <div class="banner col m2 s12" style="float: right;">
+            BANNER <br>
+            <div class="ads col m12 s12"></div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="footer">FOOTER</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
