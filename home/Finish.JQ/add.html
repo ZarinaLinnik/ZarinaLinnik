@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+    <style>
+        [type='submit']{margin-top: 15px;}
+        fieldset{width:fit-content;}
+        input[type='password']{
+            width: auto;
+            border-style: solid;
+            border-color: gray;
+            border-radius: 2px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Проверка пароля</h1>
+    <form action="#" method="get|post" id="my_form">
+        <fieldset>
+            <input type="password" name="password" id="password"> 
+            <label for="#password">* Пароль</label> <br>
+
+            <input type="password" name="check_password" id="check_password"> 
+            <label for="#check_password">* Повторите пароль</label> <br>
+
+            <input type="submit" value="Отправить">
+        </fieldset>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>    <script>
+        // ТЗ:
+        // \/ Нахожусь в password --> border-color: 'blue'
+        // \/ Не соответствие password и check_password --> backgroundColor: 'red'
+        // \/ Совпадает --> backgrounColor: 'green'
+        $(document).ready(function($){
+
+            $("input[type=password]").focus(blue).blur(gray);
+
+            function blue(){
+                $(this).css({borderColor:'blue', borderRadius: '4px'})
+            };
+            function gray(){
+                $(this).css({borderColor:'gray', borderRadius: '2px'})
+            };
+
+
+            $("input[type=password]").on('input', conditions)
+
+            function conditions(){
+                if ($('input[name=password]').val() === $('input[name=check_password]').val() && $('input[name=password]').val() != '' && $('input[name=check_password]').val() != '') {
+                    $('input[type=password]').css( 'backgroundColor','green');
+                }
+                else if($('input[name=check_password]').val() == '' | $('input[name=password]').val() == ''){
+                    $('input[type=password]').css( 'backgroundColor','white');
+                }
+                else{
+                    $('input[type=password]').css( 'backgroundColor','red');
+                }
+            };
+
+        });
+    </script>
+</body>
+</html>
